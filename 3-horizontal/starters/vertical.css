@@ -1,0 +1,106 @@
+/* Debugging grid */
+body {
+    /*background-image: url(../images/vrhythm-20px-4.png);*/
+    background: linear-gradient(0deg, #900 0px, #900 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 200, 200, 0.3) 0%,
+                                       rgba(0, 200, 200, 0.3) 5%,
+                                       transparent 5%,
+                                       transparent 95%,
+                                       rgba(0, 200, 200, 0.3) 95%,
+                                       rgba(0, 200, 200, 0.3) 100%);
+    background-position: 0 0, 0 0;
+    background-size: 100px 20px, 100% 100px;
+}
+
+/* Clearfix #asides to make the horizontal background grids below work. */
+#asides::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+#asides {
+    background-position: 0 0;
+    background-size: 100% 100px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    #asides {
+        background: linear-gradient(90deg, transparent 0%,
+                                           transparent 49%,
+                                           rgba(0, 200, 200, 0.3) 49%,
+                                           rgba(0, 200, 200, 0.3) 51%,
+                                           transparent 51%,
+                                           transparent 100%);
+    }
+}
+
+@media screen and (min-width: 960px) {
+    #asides {
+        background: linear-gradient(90deg, transparent 0%,
+                                           transparent 32%,
+                                           rgba(0, 200, 200, 0.3) 32%,
+                                           rgba(0, 200, 200, 0.3) 34%,
+                                           transparent 34%,
+                                           transparent 66%,
+                                           rgba(0, 200, 200, 0.3) 66%,
+                                           rgba(0, 200, 200, 0.3) 68%,
+                                           transparent 68%,
+                                           transparent 100%);
+    }
+}
+
+
+/* Basic font settings, establishing a 20px vertical grid, and paragraphs */
+html {
+    font-size: 16px;
+    font-family: "Liberation Sans", sans-serif;
+}
+body {
+    font-size: 100%;
+    line-height: 1.25;  /* 16px * 1.25em = 20px grid height */
+    margin: 0 1.25em;   /* A little space to the sides */
+}
+
+p {
+    margin: 1.25em 0;   /* One grid-line vertical margin */
+}
+
+/* Headings and paragraphs */
+h1 {
+    font-size: 2em;     /* =32px at default page size */
+    font-weight: bold;
+    line-height: 1.25;  /* =40px, two grid lines, at this font size */
+    margin: 0.625em 0;  /* 32px * 0.625em = 20px margin */
+    padding: 0;
+}
+h2 {
+    font-size: 1.5em;     /* =24px at default page size */
+    line-height: 1.6667em;/* =40px, two grid lines */
+    font-weight: bold;
+    margin: 0.8333em 0;   /* 24px * 0.8333em = 20px margin */
+}
+
+/* Lists - set margin & padding, on both list and items, for consistency
+ * across different browsers */
+ul, ol {
+    padding: 0 0 0 2.5em;
+    margin: 0;
+}
+li {
+    font-size: 1em;
+    line-height: 1.25;
+    padding: 0;
+    margin: 0;
+}
+
+/* Page sections: asides and footer */
+aside h2 {
+    text-align: center;
+}
+footer {
+    border-top: 2px solid #333;
+    text-align: center;
+}
+footer p {
+    margin-top: 1.125em;    /* 1.125em * 16px = 18px (grid line - border) */
+}
