@@ -1,0 +1,6 @@
+body {
+  /*background-image: url(../images/vrhythm-20px-4.png);*/
+  background: linear-gradient(0deg, #900 0px, #900 1px, transparent 1px);
+  background-position: 0 0;
+  background-size: 100px 20px;
+}
