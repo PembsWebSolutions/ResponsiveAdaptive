@@ -1,0 +1,308 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/* Custom CSS from here on. */
+html {
+  font-size: 16px;
+  font-family: arial, helvetica, sans-serif;
+}
+body {
+  font-size: 100%;
+  line-height: 1.25em;
+  margin: 0;
+  background: linear-gradient(0deg, #bbb 0px, #bbb 1px, transparent 1px, transparent 4px, #900 4px, #900 5px, transparent 5px, transparent 20px);
+  /* 
+     Shows the baseline grid
+     a. 2x guidelines (1 red, 1 grey)
+     b. both at 20px intervals, offset by 4px 
+  */
+  background-position: 0 0.25em;
+  /* 4px  */
+  /*
+        a. fits font-size (i.e. decender/ascenders)
+           into the 16px space between grey and red lines
+        b. fits bottom leading in the 4px space 
+           between grey and red lines 
+        c. background colour runs from red to red lines i
+  */
+  background-size: 1px 20px;
+}
+
+#masthead {
+  height: 10em;
+  background-image: url(../../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 100%; }
+
+nav {
+  clear: both;
+}
+nav a {
+  background-color: rgba(100,100,100,0.3);
+  display: block;
+  margin:  0;
+  font-size: 1.5em;                 /* 24px */
+  font-size: 1.5rem;                /* 24px */
+  line-height: 1.5;                 /* 36px */
+  margin: 0.166666666666666667em 0; /* 4px  */
+  margin: 0.25rem 0;                /* 4px  */
+  text-align: center;
+  text-decoration: none;
+}
+footer {
+  clear: both;
+  border-top: solid 1px black;
+  margin-top: 1.25em;
+  text-align: center;
+}
+#asides {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-flow: row wrap;  
+  -ms-flex-flow: row wrap;      
+  flex-flow: row wrap;          
+  justify-content: space-between;
+}
+
+.image-wrapper {
+  display: block;
+  height: 6.25em;
+  overflow: hidden;
+  width: 100%;
+  margin: 1.25em 0 0 0;
+}
+
+p {
+  margin: 1.25em 0;
+}
+
+h1 {
+  font-size: 2em;  /* =32px at default page size */
+  line-height: 1.25em;
+  padding: 0;
+  margin: 0.625em 0;
+  background-color: rgba(255,0,0,0.1); 
+  vertical-align: top;
+}
+h2 {
+  font-size: 1.5em; /* =24px at default page size */
+  line-height: 1.66666666em;
+  padding: 0;
+  margin: 0.833333333em 0;
+  background-color: rgba(0,255,0,0.1); 
+}
+ul,ol,dl,dt,dd,li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+figure {
+    height: 11.25em;
+      /* 180px = 9 gridlines */
+    overflow: hidden;
+        /* crop excess height down to 9 gridlines */ 
+}
+
+img {
+    width: 100%;
+    /* shrink/expand to figure width */ 
+}
+
+#whitelocks-img {
+  margin-top: -12.5em;
+}
+
+#packhorse-img {
+  margin-top: -7.5em;
+}
+
+#angel-img {
+  margin-top: -5em;
+}
+
+#vic-img {
+  margin-top: -5em;
+}
+
+#trumpet-img {
+  margin-top: 0;
+}
+
+#scarbrough-img {
+  margin-top: -5em;
+}
+
+/* Media query for 768px or more. */
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0 5%;
+  }
+  nav {
+    position: absolute;
+    top: 1.25em;
+    top: 1.25rem;
+    left: 5.078125%;
+    right: 5.078125%;
+  }
+
+  nav li {
+    float: left;
+    margin-right: 1.15942028985507246%;
+    width: 15.7004830917874396%;
+  }
+
+  nav a {
+    display: block;
+    margin: 0;
+    font-size: 1em;
+    line-height: 2;
+  }
+
+  nav li:last-child {
+    margin-right: 0; 
+  }
+
+  main {
+    margin-top: 1.25em;
+  }   
+  aside {
+    width: 48.9583333333333333%; 
+    vertical-align: top;
+  }
+  .image-wrapper {
+    margin-top: 0;
+  }
+
+  aside p:last-child {
+    margin-bottom: 0;
+  }
+
+  #whitelocks-img,
+  #packhorse-img,
+  #angel-img,
+  #vic-img,
+  #trumpet-img,
+  #scarbrough-img {
+    margin-top: 0;
+  }
+
+}
+
+/* Media query for 960px or more. */
+@media screen and (min-width: 960px) {
+  nav a {
+    font-size: 1.5em;
+  }
+
+  aside {
+    width: 31.666666666666666%;
+  }
+  aside:nth-of-type(odd) {
+    margin-right:0; 
+  }
+
+}
