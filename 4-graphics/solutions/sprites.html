@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Sprites Example</title>
+<style>
+ul,li { margin: 0; padding: 0; list-style-type: none; }
+li { display: inline-block; }
+.icon {
+    display: block; 
+    margin: 10px;
+    width: 35px;
+    height: 35px;
+    background-image: url(../images/sprites.png);
+}
+
+.icon.facebook { background-position: 0 0; }
+.icon.flickr   { background-position: 35px 0; }
+.icon.google   { background-position: 0 35px; }
+.icon.linkedin { background-position: 35px 35px; }
+</style>
+ </head>
+ <body>
+  <h1>Sprites Example</h1>
+  <ul>
+    <li><a href="https://en-gb.facebook.com/" class="icon facebook"></a></li>
+    <li><a href="https://www.flickr.com/" class="icon flickr"></a></li>
+    <li><a href="https://google.co.uk" class="icon google"></a></li>
+    <li><a href="https://uk.linkedin.com/" class="icon linkedin"></a></li>
+  </ul>
+ </body>
+</html>
